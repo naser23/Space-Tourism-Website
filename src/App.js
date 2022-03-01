@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./layout/Home";
+import DesktopBg from "./assets/home/background-home-desktop.jpg";
+import MobileBg from "./assets/home/background-home-mobile.jpg";
+import TabletBg from "./assets/home/background-home-tablet.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="w-screen h-screen bg-no-repeat bg-cover sm: bg-mobile-bg md: bg-tablet-bg lg:bg-desktop-bg xl:bg-desktop-bg"></div>
   );
 }
 
