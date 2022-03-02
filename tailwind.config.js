@@ -7,6 +7,10 @@ module.exports = {
         "mobile-bg": "url('./assets/home/background-home-mobile.jpg')",
         "tablet-bg": "url('./assets/home/background-home-tablet.jpg')",
       },
+      colors: {
+        "clear-white": "hsl(0, 0, 100%/ 11%)",
+        "test-color": "#F5F5F582",
+      },
     },
   },
   plugins: [],
