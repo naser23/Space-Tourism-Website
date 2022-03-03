@@ -13,7 +13,6 @@ function Navbar() {
     <div className="h-20 px-7 md:h-16 xl:pt-16 xl:px-16 lg:h-1/6 relative">
       <AnimatePresence>
         {navOpen && (
-          // <MobileNav />
           <motion.div
             key={1}
             initial={{ opacity: 0 }}
@@ -29,7 +28,7 @@ function Navbar() {
         <button className=" block lg:hidden xl:hidden" onClick={controlNav}>
           <img className="w-8 h-7" src={HamburgerMenu} alt="hamburger menu" />
         </button>
-        <nav className="w-3/5 h-20 bg-white/10 filter backdrop-blur-lg justify-end items-center hidden lg:flex xl:flex ">
+        <nav className="w-3/5 h-20 bg-clear-white backdrop-filter backdrop-blur-xl justify-end items-center hidden lg:flex xl:flex ">
           <ul className="w-4/5 flex justify-evenly text-lg gap-4 text-white">
             <li>00 HOME</li>
             <li>01 DESTINATION</li>

@@ -18,7 +18,7 @@ function MobileNav() {
   // };
 
   return (
-    <nav className="w-2/3 h-screen z-10 absolute bg-slate-500 right-0 px-4">
+    <nav className="w-2/3 h-screen z-10 absolute bg-clear-white backdrop-filter backdrop-blur-xl right-0 px-4">
       <div className="flex justify-end">
         <button className="mt-8" onClick={controlNav}>
           <img className="w-8 h-8" src={CloseIcon} alt="close-icon" />
