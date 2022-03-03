@@ -4,19 +4,26 @@ import HamburgerMenu from "../assets/shared/icon-hamburger.svg";
 import MobileNav from "./MobileNav";
 import { useContext } from "react";
 import NavbarContext from "../context/NavbarContext";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const { navOpen, controlNav } = useContext(NavbarContext);
 
   return (
     <div className="h-20 px-7 md:h-16 xl:pt-16 xl:px-16 lg:h-1/6 relative">
-      {navOpen && (
-        <MobileNav />
-        // <motion.div initial={{ width: 0 }} animate={{ width: "2/3" }}>
-        //   <MobileNav />
-        // </motion.div>
-      )}
+      <AnimatePresence>
+        {navOpen && (
+          // <MobileNav />
+          <motion.div
+            key={1}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <MobileNav key={1} />
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="flex justify-between items-center pt-8 md:pt-4">
         <img src={Logo} alt="Logo" />
         <button className=" block lg:hidden xl:hidden" onClick={controlNav}>
