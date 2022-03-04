@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         "belle-fair": "'Bellefair', serif",
       },
+      active: {
+        "active-link": ["lg:h-full"],
+      },
     },
   },
   plugins: [],

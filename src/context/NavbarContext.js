@@ -4,6 +4,7 @@ const NavbarContext = createContext();
 
 export function NavbarProvider({ children }) {
   const [navOpen, setNavOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(false);
 
   function controlNav() {
     navOpen === false ? setNavOpen(true) : setNavOpen(false);

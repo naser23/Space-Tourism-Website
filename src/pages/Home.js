@@ -9,7 +9,7 @@ function Home() {
         </h1>
         <p className="text-7xl pt-6 pb-4 font-sans lg:text-8xl">SPACE</p>
         <p className="text-md text-center px-4 lg:text-left lg:px-0 lg:text-lg">
-          Let's face it; if you want to go to space, you might as well genuinely
+          Let's face it, if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. We'll sit
           back, and relax because we'll give you a truly out of this world
           experience!
@@ -17,7 +17,7 @@ function Home() {
       </section>
 
       <div className="w-1/2 h-48 bg-white p-auto mt-24 flex justify-center items-center rounded-full lg:w-60 lg:h-60 lg:mt-0">
-        <p className="text-2xl tracking-widest">EXPLORE</p>
+        <p className="text-2xl tracking-widest font-belle-fair">EXPLORE</p>
       </div>
     </div>
   );

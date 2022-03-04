@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 import { useContext } from "react";
 import NavbarContext from "../../context/NavbarContext";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Navbar() {
   const { navOpen, controlNav } = useContext(NavbarContext);
@@ -30,9 +30,14 @@ function Navbar() {
           <img className="w-8 h-7" src={HamburgerMenu} alt="hamburger menu" />
         </button>
         <nav className="w-3/5 h-20 bg-clear-white backdrop-filter backdrop-blur-xl justify-end items-center hidden lg:flex xl:flex lg:w-1/2">
-          <ul className="w-4/5 flex justify-evenly text-lg gap-4 text-white">
-            <Link to="/"> 00 HOME</Link>
-            <Link to="/Destination"> 01 Destination</Link>
+          <ul className="w-4/5 flex justify-evenly text-lg gap-4 text-white lg:pr-4 lg:h-full lg:flex lg:items-center">
+            <Link
+              className="lg:h-full lg:flex lg:items-center lg:border-b-4"
+              to="/"
+            >
+              00 HOME
+            </Link>
+            <Link to="/Destination"> 01 DESTINATION</Link>
             <Link to="/Crew"> 02 CREW</Link>
             <Link to="/Technology"> 03 TECHNOLOGY</Link>
           </ul>
