@@ -10,7 +10,7 @@ function App() {
   return (
     <NavbarProvider>
       <Router>
-        <div className="w-screen h-screen bg-no-repeat bg-cover sm: bg-mobile-bg md: bg-tablet-bg lg:bg-desktop-bg xl:bg-desktop-bg">
+        <div className="w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover sm:bg-mobile-bg md: bg-tablet-bg lg:bg-desktop-bg xl:bg-desktop-bg">
           <Navbar />
 
           <Routes>

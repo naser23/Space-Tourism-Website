@@ -11,6 +11,9 @@ module.exports = {
         "clear-white": "rgb(255, 255, 255, 0.04)",
         "test-color": "#F5F5F582",
       },
+      fontFamily: {
+        "belle-fair": "'Bellefair', serif",
+      },
     },
   },
   plugins: [],
