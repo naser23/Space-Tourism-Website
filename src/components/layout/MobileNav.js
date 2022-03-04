@@ -1,7 +1,8 @@
 import React from "react";
-import CloseIcon from "../assets/shared/icon-close.svg";
+import CloseIcon from "../../assets/shared/icon-close.svg";
 import { useContext } from "react";
-import NavbarContext from "../context/NavbarContext";
+import NavbarContext from "../../context/NavbarContext";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
@@ -25,10 +26,10 @@ function MobileNav() {
         </button>
       </div>
       <ul className="text-white pt-14 flex flex-col gap-8 pl-4">
-        <li>00 HOME</li>
-        <li>01 DESTINATION</li>
-        <li>02 CREW</li>
-        <li>03 TECHNOLOGY</li>
+        <Link to="/"> 00 HOME</Link>
+        <Link to="/Destination"> 01 DESTINATION</Link>
+        <Link to="/Crew"> 02 CREW</Link>
+        <Link to="/Technology"> 03 TECHNOLOGY</Link>
       </ul>
     </nav>
   );
