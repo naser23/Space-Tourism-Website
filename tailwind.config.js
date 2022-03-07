@@ -8,7 +8,7 @@ module.exports = {
         "tablet-bg": "url('./assets/home/background-home-tablet.jpg')",
       },
       colors: {
-        "clear-white": "rgb(255, 255, 255, 0.04)",
+        "clear-white": "rgb(255, 255, 255, 0.1)",
         "test-color": "#F5F5F582",
       },
       fontFamily: {
