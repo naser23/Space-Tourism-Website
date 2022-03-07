@@ -52,24 +52,28 @@ function Navbar() {
           <ul className="w-4/5 flex justify-evenly text-lg gap-4 text-white lg:pr-4 lg:h-full lg:flex lg:items-center">
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}
+              className="link"
               to="/"
             >
               00 HOME
             </NavLink>
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}
+              className="link"
               to="/Destination"
             >
               01 DESTINATION
             </NavLink>
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}
+              className="link"
               to="/Crew"
             >
               02 CREW
             </NavLink>
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}
+              className="link"
               to="/Technology"
             >
               03 TECHNOLOGY

@@ -26,3 +26,14 @@ code {
 .active-mobile {
   border-right: 8px solid white;
 }
+
+.link:hover {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.link-mobile:hover {
+  border-right: 8px solid rgba(255, 255, 255, 0.5);
+}
