@@ -10,15 +10,12 @@ function App() {
   return (
     <NavbarProvider>
       <Router>
-        <div className="w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover sm:bg-home-mobile-bg md: bg-home-tablet-bg lg:bg-home-desktop-bg xl:bg-desktop-bg">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/Destination" element={<Destination />}></Route>
-            <Route path="/Crew" element={<Crew />}></Route>
-            <Route path="/Technology" element={<Technology />}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Destination" element={<Destination />}></Route>
+          <Route path="/Crew" element={<Crew />}></Route>
+          <Route path="/Technology" element={<Technology />}></Route>
+        </Routes>
       </Router>
     </NavbarProvider>
   );
