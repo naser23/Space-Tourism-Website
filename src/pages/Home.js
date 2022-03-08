@@ -16,7 +16,7 @@ function Home() {
         </p>
       </section>
 
-      <div className="w-1/2 h-48 bg-white p-auto mt-24 flex justify-center items-center rounded-full lg:w-60 lg:h-60 lg:mt-0 z-20 relative lg:before:w-60 lg:before:h-60 before:rounded-full before:bg-clear-white before:absolute hover:before:transition-all hover:before:scale-150">
+      <div className="w-1/2 h-48 bg-white p-auto mt-24 flex justify-center items-center rounded-full lg:w-60 lg:h-60 lg:mt-0  relative lg:before:w-60 lg:before:h-60 before:rounded-full before:bg-clear-white before:absolute hover:before:transition-all hover:before:scale-150">
         <p className="text-2xl tracking-widest font-belle-fair">EXPLORE</p>
       </div>
     </div>

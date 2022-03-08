@@ -3,9 +3,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "desktop-bg": "url('./assets/home/background-home-desktop.jpg')",
-        "mobile-bg": "url('./assets/home/background-home-mobile.jpg')",
-        "tablet-bg": "url('./assets/home/background-home-tablet.jpg')",
+        "home-desktop-bg": "url('./assets/home/background-home-desktop.jpg')",
+        "home-mobile-bg": "url('./assets/home/background-home-mobile.jpg')",
+        "home-tablet-bg": "url('./assets/home/background-home-tablet.jpg')",
+        "destination-desktop-bg":
+          "url('./assets/destination/background-destination-desktop.jpg')",
+        "destination-mobile-bg":
+          "url('./assets/destination/background-destination-mobile.jpg')",
+        "destination-tablet-bg":
+          "url('./assets/destination/background-destination-tablet.jpg')",
       },
       colors: {
         "clear-white": "rgb(255, 255, 255, 0.1)",
