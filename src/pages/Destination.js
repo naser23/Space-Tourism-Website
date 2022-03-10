@@ -15,11 +15,15 @@ function Destination() {
     <main className="text-white w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover bg-destinationMobile md:bg-destinationTablet  lg:bg-destinationDesktop xl:bg-destinationDesktop">
       <Navbar />
       <div className="lg:flex lg:justify-evenly lg:pt-8 ">
-        <section className="flex flex-col justify-start">
-          <h1 className="lg:text-3xl">
+        <section className="flex flex-col items-center lg:justify-start">
+          <h1 className="lg:text-3xl pb-4 lg:pb-0">
             <span className="text-slate-600">01</span> PICK YOUR DESTINATION
           </h1>
-          <img className="pt-12" src={MoonImg} alt="moon img" />
+          <img
+            className="w-48 h-48 lg:w-auto lg:pt-12 lg:h-auto"
+            src={MoonImg}
+            alt="moon img"
+          />
         </section>
         <section className="flex flex-col items-center lg:items-start lg:justify-center lg:w-1/3">
           <nav>
@@ -30,8 +34,8 @@ function Destination() {
               <li>TITAN</li>
             </ul>
           </nav>
-          <div className=" pt-16 flex flex-col items-start">
-            <h1 className="text-5xl lg:text-8xl ">MOON</h1>
+          <div className="pt-4 flex flex-col items-center lg:pt-16 lg:items-start">
+            <h1 className="text-5xl lg:text-8xl">MOON</h1>
             <p className="text-center px-4 lg:text-left lg:px-0 lg:pb-8 text-xl">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
               magnam eligendi soluta minima molestias architecto, voluptatem
