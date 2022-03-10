@@ -3,43 +3,55 @@ import BgDesktop from "../assets/destination/background-destination-desktop.jpg"
 import Navbar from "../components/layout/Navbar";
 import MoonImg from "../assets/destination/image-moon.png";
 import GetData from "../context/GetData";
+import NavbarContext from "../context/NavbarContext";
+import { useContext } from "react";
 
 function Destination() {
-  async function retrieveData() {
-    const settings = {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    };
-
-    const fetchResponse = await fetch("data.json", settings);
-    const data = await fetchResponse.json();
-    console.log(data);
-    return data;
-  }
-
-  retrieveData();
+  const { data } = useContext(NavbarContext);
+  const DestinationData = data.destinations;
+  console.log(DestinationData);
 
   return (
-    <main className="text-white w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover sm: bg-destinationMobile md: bg-destinationTablet lg:bg-destinationDesktop xl:bg-destinationDesktop">
+    <main className="text-white w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover bg-destinationMobile md:bg-destinationTablet  lg:bg-destinationDesktop xl:bg-destinationDesktop">
       <Navbar />
-      <section className="pt-4 flex flex-col items-center">
-        <h1>
-          <span className="text-slate-600">01</span> PICK YOUR DESTINATION
-        </h1>
-        <img className="sm: w-48 sm: h-52 pt-8" src={MoonImg} alt="moon img" />
-      </section>
-      <section>
-        <nav>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </section>
+      <div className="lg:flex lg:justify-evenly lg:pt-8 ">
+        <section className="flex flex-col justify-start">
+          <h1 className="lg:text-3xl">
+            <span className="text-slate-600">01</span> PICK YOUR DESTINATION
+          </h1>
+          <img className="pt-12" src={MoonImg} alt="moon img" />
+        </section>
+        <section className="flex flex-col items-center lg:items-start lg:justify-center lg:w-1/3">
+          <nav>
+            <ul className="text-white flex items-center gap-4 pt-4 h-12 lg:pt-0 lg:gap-8 lg:text-xl ">
+              <li>MOON</li>
+              <li>MARS</li>
+              <li>EUROPA</li>
+              <li>TITAN</li>
+            </ul>
+          </nav>
+          <div className=" pt-16 flex flex-col items-start">
+            <h1 className="text-5xl lg:text-8xl ">MOON</h1>
+            <p className="text-center px-4 lg:text-left lg:px-0 lg:pb-8 text-xl">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              magnam eligendi soluta minima molestias architecto, voluptatem
+              error culpa totam fuga libero, harum a, accusamus rerum est
+              similique aliquam assumenda sunt!
+            </p>
+            <div className="w-5/6 h-1 bg-clear-white mt-4 lg:w-full"></div>
+            <div className="flex flex-col items-center gap-4 pt-4 lg:flex-row lg:w-4/5 lg:justify-between">
+              <div>
+                <h2 className="text-heading">AVG. Distance</h2>
+                <p className="text-3xl">300,000</p>
+              </div>
+              <div>
+                <h2 className="text-heading">EST. Travel Time</h2>
+                <p className="text-3xl">3 Days</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

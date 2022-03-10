@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         "clear-white": "rgb(255, 255, 255, 0.1)",
         "test-color": "#F5F5F582",
+        heading: "#D0D6f9",
       },
       fontFamily: {
         "belle-fair": "'Bellefair', serif",
