@@ -2,8 +2,25 @@ import React from "react";
 import BgDesktop from "../assets/destination/background-destination-desktop.jpg";
 import Navbar from "../components/layout/Navbar";
 import MoonImg from "../assets/destination/image-moon.png";
+import GetData from "../context/GetData";
 
 function Destination() {
+  async function retrieveData() {
+    const settings = {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    };
+
+    const fetchResponse = await fetch("data.json", settings);
+    const data = await fetchResponse.json();
+    console.log(data);
+    return data;
+  }
+
+  retrieveData();
+
   return (
     <main className="text-white w-screen h-screen sm:h-full md:h-screen lg:h-screen bg-no-repeat bg-cover sm: bg-destinationMobile md: bg-destinationTablet lg:bg-destinationDesktop xl:bg-destinationDesktop">
       <Navbar />
