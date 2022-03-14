@@ -1,6 +1,6 @@
 import React from "react";
 import BgDesktop from "../assets/destination/background-destination-desktop.jpg";
-import Navbar from "../components/layout/Navbar";
+import Navbar from "../components/layout/navbar/Navbar";
 import MoonImg from "../assets/destination/image-moon.png";
 import GetData from "../context/GetData";
 import NavbarContext from "../context/NavbarContext";

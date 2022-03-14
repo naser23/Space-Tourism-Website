@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 import Destination from "./pages/Destination";
 import Crew from "./pages/Crew";
 import Technology from "./pages/Technology";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/navbar/Navbar";
 import { NavbarProvider } from "./context/NavbarContext";
 
 function App() {

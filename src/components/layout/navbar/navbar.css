@@ -1,0 +1,77 @@
+.navbar {
+  height: 5rem;
+  padding: 0 1.75rem;
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.hamburger-logo {
+  display: block;
+}
+
+.navbar-desktop {
+  width: 60%;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+}
+
+.nav-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+  gap: 1rem;
+  color: white;
+}
+
+/* w-4/5 flex justify-evenly text-lg gap-4 text-white lg:pr-4 lg:h-full lg:flex lg:items-center */
+
+@media (min-width: 767.98px) {
+  .navbar {
+    height: 4rem;
+  }
+
+  .navbar-container {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .navbar {
+    height: 20%;
+    padding-top: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .hamburger-logo {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: flex;
+  }
+
+  .nav-links {
+    padding-right: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .navbar-desktop {
+    width: 50%;
+  }
+}
