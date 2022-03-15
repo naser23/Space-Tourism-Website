@@ -8,8 +8,12 @@ import { useContext } from "react";
 
 function Destination() {
   const { data } = useContext(NavbarContext);
-  const DestinationData = data.destinations;
-  console.log(DestinationData);
+  const info = data.destinations;
+  displayInfo(info);
+
+  async function displayInfo(x) {
+    const process = await x;
+  }
 
   return (
     <main className="destination-container">

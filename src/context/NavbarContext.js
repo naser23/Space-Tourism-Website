@@ -16,6 +16,7 @@ export function NavbarProvider({ children }) {
     };
 
     const fetchResponse = await fetch("data.json", settings);
+    console.log(fetchResponse);
     const foundData = await fetchResponse.json();
     setData(foundData);
   }
