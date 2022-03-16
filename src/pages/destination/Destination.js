@@ -2,17 +2,24 @@ import React from "react";
 import BgDesktop from "../../assets/destination/background-destination-desktop.jpg";
 import Navbar from "../../components/layout/navbar/Navbar";
 import MoonImg from "../../assets/destination/image-moon.png";
+import MarsImg from "../../assets/destination/image-mars.png";
+import EurpoaImg from "../../assets/destination/image-europa.png";
+import TitanImg from "../../assets/destination/image-titan.png";
 import GetData from "../../context/GetData";
 import NavbarContext from "../../context/NavbarContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 function Destination() {
   const { data } = useContext(NavbarContext);
   const info = data.destinations;
-  displayInfo(info);
 
-  async function displayInfo(x) {
-    const process = await x;
+  // const [currentPlanet, setCurrentPlanet] = useState("");
+
+  let index = 0;
+
+  function updateIndex(key) {
+    index = key;
+    console.log(index);
   }
 
   return (
@@ -28,29 +35,32 @@ function Destination() {
         <section className="destination-info-container">
           <nav>
             <ul className="destination-options">
-              <li className="light-gray-text">MOON</li>
-              <li className="light-gray-text">MARS</li>
-              <li className="light-gray-text">EUROPA</li>
-              <li className="light-gray-text">TITAN</li>
+              {info &&
+                info.map((planet) => (
+                  <li
+                    className="light-gray-text"
+                    key={info.indexOf(planet)}
+                    onClick={() => updateIndex(info.indexOf(planet))}
+                  >
+                    {planet.name.toUpperCase()}
+                  </li>
+                ))}
             </ul>
           </nav>
           <div className="destination-info">
-            <h1 className="planet-name">MOON</h1>
-            <p className="planet-info">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-              magnam eligendi soluta minima molestias architecto, voluptatem
-              error culpa totam fuga libero, harum a, accusamus rerum est
-              similique aliquam assumenda sunt!
-            </p>
+            <h1 className="planet-name">
+              {info && info[index].name.toUpperCase()}
+            </h1>
+            <p className="planet-info">{info && info[index].description}</p>
             <div className="divider"></div>
             <div className="planet-stats">
               <div>
                 <h2 className="stats-header">AVG. Distance</h2>
-                <p>300,000</p>
+                <p>{info && info[index].distance}</p>
               </div>
               <div>
                 <h2 className="stats-header">EST. Travel Time</h2>
-                <p>3 Days</p>
+                <p>{info && info[0].travel}</p>
               </div>
             </div>
           </div>

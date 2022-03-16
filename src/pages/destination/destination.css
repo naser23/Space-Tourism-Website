@@ -26,9 +26,14 @@
   color: lightgray;
 }
 
+.light-gray-text:hover {
+  border-bottom: 3px solid lightgray;
+  cursor: pointer;
+}
+
 .planet-image {
-  width: 12rem;
-  height: 12rem;
+  width: 9rem;
+  height: 9rem;
 }
 
 .destination-info-container {

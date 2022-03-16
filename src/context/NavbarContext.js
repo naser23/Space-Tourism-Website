@@ -16,9 +16,14 @@ export function NavbarProvider({ children }) {
     };
 
     const fetchResponse = await fetch("data.json", settings);
-    console.log(fetchResponse);
     const foundData = await fetchResponse.json();
     setData(foundData);
+
+    // fetch("data.json", settings)
+    //   .then((response) => response.json())
+    //   .then(function (info) {
+    //     setData(info);
+    //   });
   }
 
   useEffect(() => {
