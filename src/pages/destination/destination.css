@@ -31,6 +31,10 @@
   cursor: pointer;
 }
 
+.light-gray-text:visited {
+  border-bottom: 3px solid white;
+}
+
 .planet-image {
   width: 9rem;
   height: 9rem;
@@ -195,8 +199,12 @@
   }
 
   .planet-stats {
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
+  }
+
+  .planet-stats p {
+    font-size: 2rem;
   }
 
   /*flex flex-col items-center gap-4 pt-4 lg:flex-row lg:w-4/5 lg:justify-between*/
@@ -205,5 +213,13 @@
 @media (min-width: 1199.98px) {
   .destination-info {
     padding-top: 4rem;
+  }
+
+  .planet-stats {
+    width: 80%;
+  }
+
+  .planet-stats p {
+    font-size: 2.5rem;
   }
 }

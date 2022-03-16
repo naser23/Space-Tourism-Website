@@ -32,6 +32,10 @@ code {
   border-bottom: 4px solid white;
 }
 
+.active-destination {
+  border-bottom: 4px solid white;
+}
+
 .active-mobile {
   border-right: 8px solid white;
 }

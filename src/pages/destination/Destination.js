@@ -12,15 +12,15 @@ import { useContext, useState } from "react";
 function Destination() {
   const { data } = useContext(NavbarContext);
   const info = data.destinations;
+  const [index, setIndex] = useState(0);
 
   // const [currentPlanet, setCurrentPlanet] = useState("");
 
-  let index = 0;
-
   function updateIndex(key) {
-    index = key;
-    console.log(index);
+    setIndex(key);
   }
+
+  let pictures = [MoonImg, MarsImg, EurpoaImg, TitanImg];
 
   return (
     <main className="destination-container">
@@ -30,7 +30,7 @@ function Destination() {
           <h1 className="display-header">
             <span className="gray-text">01</span> PICK YOUR DESTINATION
           </h1>
-          <img className="planet-image" src={MoonImg} alt="moon img" />
+          <img className="planet-image" src={pictures[index]} alt="moon img" />
         </section>
         <section className="destination-info-container">
           <nav>
