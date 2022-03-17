@@ -1,0 +1,70 @@
+.crew-container {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+.crew-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crew-display-header {
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.25rem;
+}
+
+.crew-divider {
+  width: 90%;
+  height: 1px;
+  background-color: gray;
+}
+
+.crew-member {
+  width: 50%;
+  height: 15rem;
+}
+
+.crew-member-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.crew-member-navigation ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.crew-member-navigation ul li {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+@media (min-width: 567.98px) {
+}
+
+@media (min-width: 767.98px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+}
+
+@media (min-width: 991.98px) {
+  .crew-container {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+}
+
+@media (min-width: 1199.98px) {
+}
