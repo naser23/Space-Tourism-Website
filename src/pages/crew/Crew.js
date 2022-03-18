@@ -18,14 +18,21 @@ function Crew() {
         </h1>
         <img className="crew-member" src={DouglasImg} alt="crew-img" />
         <div className="crew-divider"></div>
-        <nav className="crew-member-navigation">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
+        <div className="crew-ux">
+          <nav className="crew-member-navigation">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </nav>
+          <section className="crew-member-info">
+            <h2 className="member-role">{crewData && crewData[0].role}</h2>
+            <h1 className="member-name">{crewData && crewData[0].name}</h1>
+            <p className="member-bio">{crewData && crewData[0].bio}</p>
+          </section>
+        </div>
       </main>
     </div>
   );

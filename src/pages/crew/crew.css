@@ -42,6 +42,7 @@
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 1.25rem;
 }
 
 .crew-member-navigation ul li {
@@ -51,12 +52,84 @@
   border-radius: 10px;
 }
 
+.crew-member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-role {
+  color: gray;
+  font-size: 1rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.member-name {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.member-bio {
+  text-align: center;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  color: #d0d6f9;
+}
+
 @media (min-width: 567.98px) {
 }
 
 @media (min-width: 767.98px) {
   .crew-container {
     background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+
+  .crew-content-container {
+    padding-top: 2.5rem;
+  }
+
+  .crew-display-header {
+    order: 0;
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  .crew-member-navigation {
+    order: 2;
+    width: 40%;
+  }
+
+  .crew-member {
+    order: 3;
+    /* width: auto;
+    height: auto; */
+  }
+
+  .crew-ux {
+  }
+
+  .crew-divider {
+    display: none;
+  }
+
+  .crew-member-info {
+    order: 1;
+  }
+
+  .member-role {
+    font-size: 2rem;
+  }
+
+  .member-name {
+    font-size: 3rem;
+  }
+
+  .member-bio {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    padding: 1rem 7rem;
   }
 }
 
