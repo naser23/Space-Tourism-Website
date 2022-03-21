@@ -6,6 +6,7 @@
 @import "./components/layout/mobileNav/mobileNav.css";
 @import "./pages/destination/destination.css";
 @import "./pages/crew/crew.css";
+@import "./pages/technology/technology.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

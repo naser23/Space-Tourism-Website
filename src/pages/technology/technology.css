@@ -1,0 +1,42 @@
+.technology-container {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+
+.technology-display-header {
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.25rem;
+}
+
+.technology-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technology-hero-img {
+  width: 100%;
+}
+@media (min-width: 567.98px) {
+}
+
+@media (min-width: 767.98px) {
+  .technology-container {
+    background-image: url(../../assets/technology/background-technology-tablet.jpg);
+  }
+}
+
+@media (min-width: 991.98px) {
+  .technology-container {
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+  }
+}
+
+@media (min-width: 1199.98px) {
+}
