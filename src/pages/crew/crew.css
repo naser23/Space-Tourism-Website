@@ -27,7 +27,7 @@
 }
 
 .crew-member {
-  width: 50%;
+  width: 60%;
   height: 15rem;
 }
 
@@ -48,8 +48,15 @@
 .crew-member-navigation ul li {
   width: 0.75rem;
   height: 0.75rem;
-  background-color: gray;
   border-radius: 10px;
+}
+
+.inactive-link {
+  background-color: gray;
+}
+
+.active-link {
+  background-color: white;
 }
 
 .crew-member-info {

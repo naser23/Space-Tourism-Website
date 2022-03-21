@@ -15,6 +15,11 @@
   display: block;
 }
 
+.hamburger-logo img {
+  width: 2rem;
+  height: 1.75rem;
+}
+
 .navbar-desktop {
   width: 60%;
   height: 5rem;

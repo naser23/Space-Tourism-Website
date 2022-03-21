@@ -10,12 +10,14 @@ import AnoushehImg from "../../assets/crew/image-anousheh-ansari.png";
 function Crew() {
   const { data } = useContext(NavbarContext);
   const crewData = data.crew;
-  console.log(crewData);
 
   const [index, setIndex] = useState(0);
+  const [activeId, setActiveId] = useState("");
 
   function updateIndex(key) {
     setIndex(key);
+    if (key === index) {
+    }
   }
 
   const crewPictures = [DouglasImg, MarkImg, VictorImg, AnoushehImg];
@@ -32,15 +34,18 @@ function Crew() {
         <div className="crew-ux">
           <nav className="crew-member-navigation">
             <ul>
-              {/* <li></li>
-              <li></li>
-              <li></li>
-              <li></li> */}
               {crewData &&
                 crewData.map((member) => (
                   <li
                     key={crewData.indexOf(member)}
-                    onClick={() => updateIndex(crewData.indexOf(member))}
+                    onClick={() => {
+                      updateIndex(crewData.indexOf(member));
+                    }}
+                    className={
+                      index === crewData.indexOf(member)
+                        ? "active-link"
+                        : "inactive-link"
+                    }
                   ></li>
                 ))}
             </ul>

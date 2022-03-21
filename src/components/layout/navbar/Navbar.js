@@ -27,7 +27,7 @@ function Navbar() {
       <div className="navbar-container">
         <img src={Logo} alt="Logo" />
         <button className="hamburger-logo" onClick={controlNav}>
-          <img className="w-8 h-7" src={HamburgerMenu} alt="hamburger menu" />
+          <img src={HamburgerMenu} alt="hamburger menu" />
         </button>
         <nav className="navbar-desktop">
           <ul className="nav-links">
