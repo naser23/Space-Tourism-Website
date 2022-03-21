@@ -72,6 +72,6 @@
 
 @media (min-width: 1199.98px) {
   .navbar-desktop {
-    width: 50%;
+    /* width: 50%; */
   }
 }
