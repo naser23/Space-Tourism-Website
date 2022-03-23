@@ -2,6 +2,8 @@
   height: 5rem;
   padding: 0 1.75rem;
   position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .navbar-container {

@@ -16,15 +16,10 @@ function Destination() {
 
   // const [currentPlanet, setCurrentPlanet] = useState("");
 
-  function updateIndex(key) {
-    setIndex(key);
-  }
-
   let pictures = [MoonImg, MarsImg, EurpoaImg, TitanImg];
 
   return (
     <main className="destination-container">
-      <Navbar />
       <div className="content-container">
         <section className="destination-display">
           <h1 className="display-header">
@@ -40,7 +35,7 @@ function Destination() {
                   <li
                     className="light-gray-text"
                     key={info.indexOf(planet)}
-                    onClick={() => updateIndex(info.indexOf(planet))}
+                    onClick={() => setIndex(info.indexOf(planet))}
                   >
                     {planet.name.toUpperCase()}
                   </li>

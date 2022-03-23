@@ -4,7 +4,6 @@ import Navbar from "../../components/layout/navbar/Navbar";
 function Home() {
   return (
     <div className="home-container">
-      <Navbar />
       <div className="content-container">
         <section className="home-text">
           <h1 className="home-header">SO, YOU WANT TO TRAVEL TO</h1>

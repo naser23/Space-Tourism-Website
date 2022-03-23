@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
+  padding-top: 6rem;
 }
 
 .technology-display-header {
@@ -111,6 +112,7 @@
 @media (min-width: 991.98px) {
   .technology-container {
     background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    padding-top: 12rem;
   }
 
   .technology-content-container {

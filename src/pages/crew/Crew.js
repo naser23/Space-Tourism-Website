@@ -14,17 +14,10 @@ function Crew() {
   const [index, setIndex] = useState(0);
   const [activeId, setActiveId] = useState("");
 
-  function updateIndex(key) {
-    setIndex(key);
-    if (key === index) {
-    }
-  }
-
   const crewPictures = [DouglasImg, MarkImg, VictorImg, AnoushehImg];
 
   return (
     <div className="crew-container">
-      <Navbar />
       <main className="crew-content-container">
         <h1 className="crew-display-header">
           <span className="gray-text">02</span> MEET YOUR CREW
@@ -39,7 +32,7 @@ function Crew() {
                   <li
                     key={crewData.indexOf(member)}
                     onClick={() => {
-                      updateIndex(crewData.indexOf(member));
+                      setIndex(crewData.indexOf(member));
                     }}
                     className={
                       index === crewData.indexOf(member)

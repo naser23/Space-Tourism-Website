@@ -10,6 +10,7 @@ function App() {
   return (
     <NavbarProvider>
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Destination" element={<Destination />}></Route>

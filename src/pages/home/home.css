@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
+  padding-top: 8rem;
 }
 
 .content-container {
@@ -120,7 +121,6 @@
   }
 
   .content-container {
-    padding-top: 2rem;
   }
 
   .space {

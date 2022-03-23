@@ -14,13 +14,8 @@ function Technology() {
   const [index, setIndex] = useState(0);
   const techPictures = [LaunchImg, CapsuleImg, SpacePortImg];
 
-  function updateIndex(key) {
-    setIndex(key);
-  }
-
   return (
     <div className="technology-container">
-      <Navbar />
       <main className="technology-content-container">
         <h1 className="crew-display-header">
           <span className="gray-text">03</span> SPACE LAUNCH 101
@@ -33,14 +28,11 @@ function Technology() {
         <section className="technology-ux">
           <nav className="technology-navigation">
             <ul>
-              {/* <li>1</li>
-              <li>2</li>
-              <li>3</li> */}
               {technologyData &&
                 technologyData.map((page) => (
                   <li
                     key={technologyData.indexOf(page)}
-                    onClick={() => updateIndex(technologyData.indexOf(page))}
+                    onClick={() => setIndex(technologyData.indexOf(page))}
                     className={
                       index == technologyData.indexOf(page)
                         ? "technology-active"

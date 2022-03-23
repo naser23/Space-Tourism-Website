@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
+  padding-top: 6rem;
 }
 
 .crew-content-container {
@@ -148,6 +149,7 @@
 @media (min-width: 991.98px) {
   .crew-container {
     background-image: url(../../assets/crew/background-crew-desktop.jpg);
+    padding-top: 12rem;
   }
 
   .crew-content-container {
