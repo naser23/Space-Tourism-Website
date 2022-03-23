@@ -23,6 +23,63 @@
 .technology-hero-img {
   width: 100%;
 }
+
+.technology-navigation {
+  padding: 2rem 0;
+}
+
+.technology-navigation ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.technology-navigation ul li {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  border: 1px solid white;
+}
+
+.technology-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-subheader {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #d0d6f9;
+}
+
+.info-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.info-description {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  color: #d0d6f9;
+  line-height: 1.7;
+}
+
+.technology-navigation ul li:hover {
+  background-color: gray;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.technology-active {
+  background-color: white;
+  color: black;
+}
+
 @media (min-width: 567.98px) {
 }
 
@@ -30,13 +87,77 @@
   .technology-container {
     background-image: url(../../assets/technology/background-technology-tablet.jpg);
   }
+
+  .technology-navigation ul li {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.75rem;
+  }
+
+  .info-subheader {
+    font-size: 1.25rem;
+  }
+
+  .info-title {
+    font-size: 2.5rem;
+  }
+
+  .info-description {
+    padding: 0.5rem 8.5rem;
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 991.98px) {
   .technology-container {
     background-image: url(../../assets/technology/background-technology-desktop.jpg);
   }
+
+  .technology-content-container {
+    height: 80%;
+    flex-wrap: wrap;
+    align-items: start;
+    padding-left: 5rem;
+  }
+
+  .technology-display-header {
+    order: 0;
+  }
+
+  .technology-ux {
+    order: 1;
+    width: 50%;
+    display: flex;
+    padding-top: 4rem;
+  }
+
+  .technology-hero-img {
+    order: 2;
+    width: 40%;
+    height: 70%;
+  }
+
+  .technology-info {
+    align-items: start;
+  }
+
+  .technology-navigation ul {
+    flex-direction: column;
+    padding-right: 3rem;
+  }
+
+  .info-title {
+    font-size: 3rem;
+  }
+
+  .info-description {
+    padding: 0rem;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1199.98px) {
+  .info-description {
+    line-height: 2.75rem;
+  }
 }

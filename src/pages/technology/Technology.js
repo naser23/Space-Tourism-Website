@@ -4,11 +4,19 @@ import { useState, useContext } from "react";
 import NavbarContext from "../../context/NavbarContext";
 import LaunchImg from "../../assets/technology/image-launch-vehicle-landscape.jpg";
 import CapsuleImg from "../../assets/technology/image-space-capsule-landscape.jpg";
+import SpacePortImg from "../../assets/technology/image-spaceport-landscape.jpg";
 
 function Technology() {
   const { data } = useContext(NavbarContext);
   const technologyData = data.technology;
   console.log(technologyData);
+
+  const [index, setIndex] = useState(0);
+  const techPictures = [LaunchImg, CapsuleImg, SpacePortImg];
+
+  function updateIndex(key) {
+    setIndex(key);
+  }
 
   return (
     <div className="technology-container">
@@ -19,13 +27,41 @@ function Technology() {
         </h1>
         <img
           className="technology-hero-img"
-          src={LaunchImg}
+          src={techPictures[index]}
           alt="technology img"
         />
         <section className="technology-ux">
           <nav className="technology-navigation">
-            <ul></ul>
+            <ul>
+              {/* <li>1</li>
+              <li>2</li>
+              <li>3</li> */}
+              {technologyData &&
+                technologyData.map((page) => (
+                  <li
+                    key={technologyData.indexOf(page)}
+                    onClick={() => updateIndex(technologyData.indexOf(page))}
+                    className={
+                      index == technologyData.indexOf(page)
+                        ? "technology-active"
+                        : ""
+                    }
+                  >
+                    {technologyData.indexOf(page) + 1}
+                  </li>
+                ))}
+            </ul>
           </nav>
+
+          <div className="technology-info">
+            <h1 className="info-subheader">THE TERMINOLOGY...</h1>
+            <h1 className="info-title">
+              {technologyData && technologyData[index].name}
+            </h1>
+            <p className="info-description">
+              {technologyData && technologyData[index].description}
+            </p>
+          </div>
         </section>
       </main>
     </div>
