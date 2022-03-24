@@ -59,8 +59,6 @@
   transform: scale(1.5);
 }
 
-/* // lg:w-60 lg:h-60 lg:mt-0 relative lg:before:w-60 lg:before:h-60 before:rounded-full before:bg-clear-white before:absolute hover:before:transition-all hover:before:scale-150 */
-
 .explore-text {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
