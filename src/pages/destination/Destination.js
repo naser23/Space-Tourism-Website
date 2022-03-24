@@ -20,7 +20,7 @@ function Destination() {
 
   return (
     <main className="destination-container">
-      <div className="content-container">
+      <div className="destination-content-container">
         <section className="destination-display">
           <h1 className="display-header">
             <span className="gray-text">01</span> PICK YOUR DESTINATION

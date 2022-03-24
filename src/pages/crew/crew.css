@@ -157,11 +157,12 @@
     height: 80%;
     align-items: start;
     padding-left: 10%;
+    padding-right: 5%;
   }
 
   .crew-member {
     width: auto;
-    height: 70%;
+    height: auto;
     overflow: hidden;
   }
 
@@ -175,8 +176,13 @@
     text-align: left;
   }
 
+  .member-name {
+    font-size: 2.5rem;
+  }
+
   .crew-display-header {
     padding: 0;
+    padding-bottom: 1rem;
   }
 
   .crew-ux {
@@ -209,5 +215,17 @@
 @media (min-width: 1199.98px) {
   .crew-member {
     height: auto;
+  }
+
+  .member-name {
+    font-size: 3rem;
+  }
+
+  .crew-display-header {
+    padding-bottom: 0;
+  }
+
+  .crew-member-navigation ul {
+    width: 20%;
   }
 }

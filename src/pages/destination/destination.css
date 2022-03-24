@@ -109,8 +109,8 @@
   }
 
   .planet-image {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     padding: 1rem 0;
   }
 
@@ -149,7 +149,7 @@
     padding-top: 12rem;
   }
 
-  .content-container {
+  .destination-content-container {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;

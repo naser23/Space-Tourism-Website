@@ -9,7 +9,6 @@ import SpacePortImg from "../../assets/technology/image-spaceport-landscape.jpg"
 function Technology() {
   const { data } = useContext(NavbarContext);
   const technologyData = data.technology;
-  console.log(technologyData);
 
   const [index, setIndex] = useState(0);
   const techPictures = [LaunchImg, CapsuleImg, SpacePortImg];
