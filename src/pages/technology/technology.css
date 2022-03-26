@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: fixed;
   padding-top: 6rem;
+  overflow: visible;
 }
 
 .technology-display-header {
@@ -113,13 +114,14 @@
   .technology-container {
     background-image: url(../../assets/technology/background-technology-desktop.jpg);
     padding-top: 12rem;
+    overflow: visible;
   }
 
   .technology-content-container {
     height: 80%;
     flex-wrap: wrap;
     align-items: start;
-    padding-left: 5rem;
+    padding-left: 0.25rem;
   }
 
   .technology-display-header {
@@ -161,5 +163,9 @@
 @media (min-width: 1199.98px) {
   .info-description {
     line-height: 2.75rem;
+  }
+
+  .technology-content-container {
+    padding-left: 5rem;
   }
 }
