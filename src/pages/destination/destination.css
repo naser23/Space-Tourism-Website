@@ -146,7 +146,7 @@
 @media (min-width: 991.98px) {
   .destination-container {
     background-image: url(../../assets/destination/background-destination-desktop.jpg);
-    padding-top: 12rem;
+    padding-top: 8rem;
   }
 
   .destination-content-container {
@@ -213,6 +213,9 @@
 }
 
 @media (min-width: 1199.98px) {
+  .destination-container {
+    padding-top: 12rem;
+  }
   .destination-info {
     padding-top: 4rem;
   }
