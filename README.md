@@ -10,4 +10,4 @@ In this project I learned how to:
 4. create seperate file for the context and use the useContext hook to bring in data and use it when and where I needed it.
 5. learned the basics of tailwind and custom css classes (started to use tailwind but switched to regular css stylesheets).
 
-I will update this readme when im done making smaller changes to get the project ready. Im about 85% done with the project.
+Live link to the site: https://space-tourism-website-naser.netlify.app/
