@@ -120,7 +120,6 @@
   .technology-content-container {
     height: 80%;
     flex-wrap: wrap;
-    align-items: start;
     padding-left: 0.25rem;
   }
 
@@ -167,5 +166,6 @@
 
   .technology-content-container {
     padding-left: 5rem;
+    align-items: start;
   }
 }
