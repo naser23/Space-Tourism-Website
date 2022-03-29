@@ -16,7 +16,7 @@ function MobileNav() {
           <img src={CloseIcon} alt="close-icon" />
         </button>
       </div>
-      <ul className="nav-links-mobile">
+      <div className="nav-links-mobile">
         <NavLink
           className={(navData) => (navData.isActive ? "active-mobile" : "")}
           to="/"
@@ -45,7 +45,7 @@ function MobileNav() {
         >
           03 TECHNOLOGY
         </NavLink>
-      </ul>
+      </div>
     </nav>
   );
 }
