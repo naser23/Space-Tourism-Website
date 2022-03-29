@@ -14,6 +14,10 @@ function Destination() {
   const info = data.destinations;
   const [index, setIndex] = useState(0);
 
+  function test(index) {
+    console.log(index);
+  }
+
   // const [currentPlanet, setCurrentPlanet] = useState("");
 
   let pictures = [MoonImg, MarsImg, EurpoaImg, TitanImg];
@@ -33,9 +37,13 @@ function Destination() {
               {info &&
                 info.map((planet) => (
                   <li
-                    className="light-gray-text"
                     key={info.indexOf(planet)}
                     onClick={() => setIndex(info.indexOf(planet))}
+                    className={
+                      index === info.indexOf(planet)
+                        ? "destination-active light-gray-text"
+                        : "light-gray-text"
+                    }
                   >
                     {planet.name.toUpperCase()}
                   </li>

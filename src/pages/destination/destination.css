@@ -28,11 +28,11 @@
 }
 
 .light-gray-text:hover {
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid gray;
   cursor: pointer;
 }
 
-.light-gray-text:visited {
+.destination-active {
   border-bottom: 3px solid white;
 }
 
