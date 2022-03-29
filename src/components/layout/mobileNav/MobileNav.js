@@ -20,24 +20,28 @@ function MobileNav() {
         <NavLink
           className={(navData) => (navData.isActive ? "active-mobile" : "")}
           to="/"
+          onClick={controlNav}
         >
           00 HOME
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? "active-mobile" : "")}
           to="/Destination"
+          onClick={controlNav}
         >
           01 DESTINATION
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? "active-mobile" : "")}
           to="/Crew"
+          onClick={controlNav}
         >
           02 CREW
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? "active-mobile" : "")}
           to="/Technology"
+          onClick={controlNav}
         >
           03 TECHNOLOGY
         </NavLink>
