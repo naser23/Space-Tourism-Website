@@ -30,7 +30,7 @@ function Navbar() {
           <img src={HamburgerMenu} alt="hamburger menu" />
         </button>
         <nav className="navbar-desktop">
-          <ul className="nav-links">
+          <div className="nav-links">
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}
               className="link"
@@ -59,7 +59,7 @@ function Navbar() {
             >
               03 TECHNOLOGY
             </NavLink>
-          </ul>
+          </div>
         </nav>
       </div>
     </div>
