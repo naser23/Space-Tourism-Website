@@ -11,7 +11,7 @@ function Navbar() {
   const { navOpen, controlNav } = useContext(NavbarContext);
 
   return (
-    <div className="navbar">
+    <header className="navbar">
       <AnimatePresence>
         {navOpen && (
           <motion.div
@@ -62,7 +62,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
 
