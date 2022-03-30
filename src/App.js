@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import Home from "./pages/home/Home";
 import Destination from "./pages/destination/Destination";
 import Crew from "./pages/crew/Crew";
@@ -9,7 +14,7 @@ import { NavbarProvider } from "./context/NavbarContext";
 function App() {
   return (
     <NavbarProvider>
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -17,7 +22,7 @@ function App() {
           <Route path="/Crew" element={<Crew />}></Route>
           <Route path="/Technology" element={<Technology />}></Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </NavbarProvider>
   );
 }

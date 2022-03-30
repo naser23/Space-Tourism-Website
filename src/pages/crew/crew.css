@@ -188,6 +188,7 @@
   .crew-ux {
     width: 50%;
     height: 80%;
+    padding-top: 3rem;
     justify-content: space-around;
   }
 
